@@ -20,7 +20,7 @@ export const Navbar = () => {
         justify="start"
       >
         <NavbarItem className="hidden sm:flex">
-          <Button onPress={() => window.history.back()} variant="light" size="lg" startContent={<FaArrowLeft />}>Back</Button>
+          <Button onClick={() => window.history.back()} variant="light" size="lg" startContent={<FaArrowLeft />}>Back</Button>
         </NavbarItem>
       </NavbarContent>
 
