@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Navbar as UINavbar,
   NavbarContent,
@@ -20,7 +22,7 @@ export const Navbar = () => {
         justify="start"
       >
         <NavbarItem className="hidden sm:flex">
-          <Button onClick={() => window.history.back()} variant="light" size="lg" startContent={<FaArrowLeft />}>Back</Button>
+          <Button onPress={() => window.history.back()} variant="light" size="lg" startContent={<FaArrowLeft />}>Back</Button>
         </NavbarItem>
       </NavbarContent>
 
